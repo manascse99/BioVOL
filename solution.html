@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Waste-to-Energy Composting System Solution">
+    <title>Solution - Waste-to-Energy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo h1 {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        nav .logo h1 .orange {
+            color: #FF5733; /* Orange color */
+        }
+
+        nav .logo h1 .green {
+            color: #4CAF50; /* Green color */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            text-decoration: none; /* Remove underline */
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Solution Section */
+        .solution {
+            padding: 4rem 10%;
+            background-color: #fff;
+            margin-top: 4rem;
+        }
+
+        .solution h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #444;
+        }
+
+        .solution p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 3rem;
+            text-align: center;
+            line-height: 1.8;
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .step {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+        }
+
+        .step:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-color: #4CAF50;
+        }
+
+        .step h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+
+        .step p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .step img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 15px;
+            border-radius: 6px;
+        }
+
+        .step img:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <h1><span class="orange">Bio</span><span class="green">Volt</span></h1>
+                </a>
+            </div>
+            <ul>
+                
+                <li><a href="solution.html">Solution</a></li>
+                <li><a href="works.html">How-it-Works</a></li>
+                <li><a href="benifits.html">Benefits</a></li>
+                <li><a href="prototype.html">Prototype</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="submitreview.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Solution Section -->
+    <section class="solution">
+        <h1>Waste-to-Energy Composting System</h1>
+        <p>Urban apartment complexes generate a significant amount of food waste, which often ends up in landfills. 
+            This not only increases pollution but also wastes valuable resources. To tackle this problem, the proposed Waste-to-Energy Composting System for Apartments offers an eco-friendly solution that converts food waste into both renewable energy and useful compost. This system reduces food waste, cuts energy costs, and helps the environment.</p>
+        <div class="steps-container">
+            <div class="step">
+                <h2>Step 1: Collection</h2>
+                <p>Food waste is collected from each apartment in a dedicated bin system to ensure proper segregation.</p>
+                <img src="https://goexplorer.org/wp-content/uploads/2018/06/2015_Waste_Milan4.jpg" alt="Waste Collection">
+            </div>
+            <div class="step">
+                <h2>Step 2: Anaerobic Digestion</h2>
+                <p>The collected waste undergoes anaerobic digestion, breaking down food scraps without oxygen to produce biogas.</p>
+                <a href="BioVoltRev (1).mp4" target="_blank">
+                    <img src="https://www.eesi.org/images/content/Figure1-Anaerobic-Digestion-Process.jpg" alt="Anaerobic Digestion">
+                </a>
+            </div>
+            
+            <div class="step">
+                <h2>Step 3: Biogas Generation</h2>
+                <p>The biogas is captured and used as a renewable energy source to power shared spaces or apartment utilities.</p>
+                <img src="https://www.alpsecoscience.co.uk/wp-content/uploads/AdobeStock_519123225-scaled.jpeg" alt="Biogas Generation">
+            </div>
+            <div class="step">
+                <h2>Step 4: Compost Production</h2>
+                <p>The leftover material, called digestate, is turned into nutrient-rich compost for gardening and landscaping.</p>
+                <img src="https://drawdown.org/sites/default/files/styles/twitter/public/solutions/solution_composting01.jpg?itok=1UT9jq9f" alt="Compost Production">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Waste-to-Energy Composting System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

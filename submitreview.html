@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Feedback - BioVolt</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f7f2;
+            color: #333;
+        }
+
+        /* Navbar */
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #000000; /* Black navbar */
+            padding: 15px 20px;
+        }
+
+        .logo h1 {
+            color: white;
+            margin: 0;
+        }
+
+        .logo .red {
+            color: #e74c3c; /* Red color for "Bio" */
+        }
+
+        .logo .green {
+            color: #2ecc71; /* Green color for "Volt" */
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        ul li {
+            margin-right: 20px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        ul li a:hover {
+            color: #f1c40f;
+        }
+
+        /* Auth Buttons */
+        .auth-buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .auth-buttons button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 1em;
+        }
+
+        .auth-buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        .auth-buttons .facebook-btn {
+            background-color: #3b5998;
+        }
+
+        .auth-buttons .facebook-btn:hover {
+            background-color: #2d4373;
+        }
+
+        /* Form Section */
+        .form-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #3498db;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 1em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: none;
+            height: 150px;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-actions button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-actions .submit-btn {
+            background-color: #3498db;
+        }
+
+        .form-actions .reset-btn {
+            background-color: #e74c3c;
+        }
+
+        .form-actions .reset-btn:hover {
+            background-color: #c0392b;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #3498db;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer-content p {
+            margin: 0;
+            font-size: 1em;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 15px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <h1><span class="red">Bio</span><span class="green">Volt</span></h1>
+                </a>
+            </div>
+            <ul>
+                <li><a href="solution.html">Solution</a></li>
+                <li><a href="works.html">How It Works</a></li>
+                <li><a href="benifits.html">Benefits</a></li>
+                <li><a href="prototype.html">Prototype</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Submit Review Form Section -->
+    <div class="form-section">
+        <h2>Submit Your Feedback</h2>
+        <form action="submit_feedback_process.php" method="POST">
+            <!-- User Details -->
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <!-- Feedback Category -->
+            <div class="form-group">
+                <label for="feedback-category">Feedback Category:</label>
+                <select id="feedback-category" name="feedback-category" onchange="filterFeedbackTypes()" required>
+                    <option value="">Select a Category</option>
+                    <option value="energy-solution">Energy Solution</option>
+                    <option value="composting">Composting</option>
+                </select>
+            </div>
+
+            <!-- Feedback Type -->
+            <div class="form-group">
+                <label for="feedback-type">Select a Specific Type:</label>
+                <select id="feedback-type" name="feedback-type" required>
+                    <option value="">Select a Type</option>
+                </select>
+            </div>
+
+            <!-- Feedback Content -->
+            <div class="form-group">
+                <label for="feedback-content">Write Your Feedback (Max 500 Words):</label>
+                <textarea id="feedback-content" name="feedback-content" maxlength="500" placeholder="Share your experience here..." required></textarea>
+            </div>
+
+            <!-- Form Actions -->
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Google and Facebook Sign-in Buttons -->
+    <div class="auth-buttons">
+        <button class="google-btn" onclick="signInWithGoogle()">Sign in with Google</button>
+        <button class="facebook-btn" onclick="signInWithFacebook()">Sign in with Facebook</button>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Connect with us:</p>
+            <div class="social-media">
+                <a href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>
+                <a href="https://x.com" target="_blank">
+                    <i class="fab fa-twitter"></i> X
+                </a>
+                <a href="https://www.linkedin.com" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+            </div>
+            <p style="margin-top: 20px;">Address: KIET, Ghaziabad, 201206</p>
+        </div>
+    </footer>
+
+    <!-- Script Section -->
+    <script>
+        function signInWithGoogle() {
+            alert('Google Sign-In Clicked! Add your OAuth logic.');
+        }
+
+        function signInWithFacebook() {
+            alert('Facebook Sign-In Clicked! Add your OAuth logic.');
+        }
+
+        const feedbackTypes = {
+            'energy-solution': ['Energy Efficiency', 'Solar Integration', 'Waste-to-Energy Process'],
+            'composting': ['Composting Methods', 'Compost Quality', 'Efficiency of Composting System']
+        };
+
+        function filterFeedbackTypes() {
+            const category = document.getElementById('feedback-category').value;
+            const feedbackTypeDropdown = document.getElementById('feedback-type');
+
+            feedbackTypeDropdown.innerHTML = '<option value="">Select a Type</option>';
+            if (category && feedbackTypes[category]) {
+                feedbackTypes[category].forEach(type => {
+                    const option = document.createElement('option');
+                    option.value = type.toLowerCase().replace(/\s+/g, '-');
+                    option.textContent = type;
+                    feedbackTypeDropdown.appendChild(option);
+                });
+            }
+        }
+    </script>
+</body>
+</html>

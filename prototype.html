@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Prototype for Waste-to-Energy Project">
+    <title>Prototype - Waste-to-Energy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo a {
+            text-decoration: none;
+        }
+
+        nav .logo h1 {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        nav .logo .orange {
+            color: #FF5733;
+        }
+
+        nav .logo .green {
+            color: #4CAF50;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Prototype Section */
+        section {
+            padding: 4rem 10%;
+            text-align: center;
+        }
+
+        section h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #4CAF50;
+            margin-bottom: 2rem;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .prototype-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .prototype {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .prototype:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .prototype img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        .prototype h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .prototype p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .prototype-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <h1><span class="orange">Bio</span><span class="green">Volt</span></h1>
+                </a>
+            </div>
+            <ul>
+                
+                <li><a href="solution.html">Solution</a></li>
+                <li><a href="works.html">How It Works</a></li>
+                <li><a href="benifits.html">Benefits</a></li>
+                <li><a href="prototype.html">Prototype</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="submitreview.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Prototype Section -->
+    <section>
+        <h1>Prototype of the Waste-to-Energy System</h1>
+        <p>Prototyping allows designers to create physical or digital models of the solution to test ideas, explore functionality, and visualize how the final product will work. The prototyping phase played a critical role in the development of our composting system.</p>
+
+        <div class="prototype-container">
+            <div class="prototype">
+                <img src="https://image.chukouplus.com/upload/C_1053/file/20230315/9c29696105c6360ab522af141ca6b2e1.jpg?x-oss-process=image/format,webp&1" alt="Anaerobic Digestion Tank">
+                <h2>Anaerobic Digestion Tank</h2>
+                <p>This prototype was tested to evaluate how effectively it processes food waste in a confined space while maintaining the necessary temperature, moisture, and airflow.</p>
+            </div>
+            <div class="prototype">
+                <img src="https://www.plasticfusion.com/wp-content/uploads/2024/07/Homan-9wmSMALL-1-scaled-1-1-1-1-1200x799.jpg" alt="Biogas Collection System">
+                <h2>Biogas Collection System</h2>
+                <p>The team built a small-scale version of the biogas generator to measure energy output and assess its ability to power apartment complex areas.</p>
+            </div>
+            <div class="prototype">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/PX/LC/RX/105803518/vermicompost-fertilizer-500x500.jpeg" alt="Composting Output">
+                <h2>Composting Output</h2>
+                <p>Testing the quality of the digestate allowed us to refine the composting process to ensure it could be used in urban gardening and other applications.</p>
+            </div>
+        </div>
+
+        <p><strong>Impact:</strong> The prototype phase provided key insights into the system's capacity, helped optimize energy production, and ensured the solution was user-friendly. The feedback from prototype testing allowed the team to refine the final design, making the solution more efficient and effective.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Waste-to-Energy Composting System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

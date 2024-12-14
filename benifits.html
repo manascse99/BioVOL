@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benefits of Waste-to-Energy Project">
+    <title>Benefits - Waste-to-Energy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo a {
+            text-decoration: none; /* Remove underline for the link */
+        }
+
+        .logo h1 {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .logo .red {
+            color: #FF5733; /* Red color for the first part */
+        }
+
+        .logo .green {
+            color: #4CAF50; /* Green color for the second part */
+        }
+
+        .logo a:hover h1 {
+            color: #4CAF50; /* Optional: change color on hover */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            text-decoration: none; /* Removes the underline */
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Benefits Section */
+        section {
+            padding: 4rem 10%;
+            text-align: center;
+        }
+
+        section h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #4CAF50;
+            margin-bottom: 2rem;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .benefits-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefit:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .benefit img {
+            max-width: 250px; /* Increased size */
+            margin-bottom: 15px;
+            border-radius: 10px; /* Optional: Adds rounded edges to the images */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Optional: Enhances the shadow effect */
+            transition: transform 0.3s ease; /* Adds a smooth zoom effect on hover */
+        }
+
+        .benefit img:hover {
+            transform: scale(1.1); /* Slight zoom on hover */
+        }
+
+        .benefit h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .benefit p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .benefits-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <h1><span class="red">Bio</span><span class="green">Volt</span></h1>
+                </a>
+            </div>
+            <ul>
+                
+                <li><a href="solution.html">Solution</a></li>
+                <li><a href="works.html">How It Works</a></li>
+                <li><a href="benifits.html">Benefits</a></li>
+                <li><a href="prototype.html">Prototype</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="submitreview.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Benefits Section -->
+    <section>
+        <h1>Benefits of the Waste-to-Energy System</h1>
+        <p>The Waste-to-Energy system transforms food waste into a valuable resource while addressing urban challenges in waste management and sustainability.</p>
+
+        <div class="benefits-container">
+            <div class="benefit">
+                <img src="https://norsus.no/wp-content/uploads/biogass-10-years-big-1400x786.jpg" alt="Sustainability Icon">
+                <h2>Environmental Sustainability</h2>
+                <p>Reduces food waste in landfills, minimizing methane emissions and contributing to a cleaner environment.</p>
+            </div>
+            <div class="benefit">
+                <img src="https://www.thebusinessresearchcompany.com/graphimages/Biogas_Plant_Global_Market_Report_2024_Graph.webp" alt="Cost Savings Icon">
+                <h2>Cost Savings</h2>
+                <p>Generates electricity and heat for common areas, reducing energy costs for urban apartment residents.</p>
+            </div>
+            <div class="benefit">
+                <img src="https://orbin.in/wp-content/uploads/2024/02/Composting-Vs-Biogas.png" alt="Compost Icon">
+                <h2>Rich Compost</h2>
+                <p>Produces nutrient-rich digestate that can be used for gardening and landscaping, beautifying urban spaces.</p>
+            </div>
+            <div class="benefit">
+                <img src="https://www.build-a-biogas-plant.com/wp-content/uploads/2015/01/IndiaFarming2.webp" alt="Community Icon">
+                <h2>Community Building</h2>
+                <p>Engages residents in sustainable practices, fostering a sense of responsibility and unity in the community.</p>
+            </div>
+            <div class="benefit">
+                <img src="https://rextag.com/cdn/shop/articles/the-future-of-renewable-energy.jpg?v=1712126416&width=1100" alt="Energy Icon">
+                <h2>Renewable Energy</h2>
+                <p>Produces biogas, a clean and renewable energy source, reducing reliance on non-renewable energy.</p>
+            </div>
+            <div class="benefit">
+                <img src="https://www.yardi.com/blog/wp-content/uploads/sites/15/2023/04/rsz_adobestock_358463924.jpg?w=1280" alt="Waste Management Icon">
+                <h2>Efficient Waste Management</h2>
+                <p>Reduces waste volume and creates a circular economy by turning waste into valuable resources.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Waste-to-Energy Composting System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

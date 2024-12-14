@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How the Waste-to-Energy System Works">
+    <title>How It Works - Waste-to-Energy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo h1 {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Add color classes for orange and green */
+        .orange {
+            color: #FF5722; /* Orange color */
+        }
+
+        .green {
+            color: #4CAF50; /* Green color */
+        }
+
+        /* Section Styling */
+        section {
+            padding: 4rem 10%;
+        }
+
+        section h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #4CAF50;
+            margin-bottom: 2rem;
+        }
+
+        section p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Steps Section */
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .step {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .step img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .step h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .step p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .steps-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <h1><span class="orange">Bio</span><span class="green">Volt</span></h1>
+                </a>
+            </div>
+            <ul>
+                
+                <li><a href="solution.html">Solution</a></li>
+                <li><a href="works.html">How It Works</a></li>
+                <li><a href="benifits.html">Benefits</a></li>
+                <li><a href="prototype.html">Prototype</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="submitreview.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- How It Works Section -->
+    <section>
+        <h1>How It Works</h1>
+        <p>The Waste-to-Energy system uses anaerobic digestion to convert food waste into renewable energy and nutrient-rich compost, providing a sustainable solution to urban waste management challenges.</p>
+
+        <div class="steps-container">
+            <div class="step">
+                <img src="https://colloide.com/app/uploads/2020/07/Anaerobic-Digestion-Process.png" alt="Anaerobic Digestion Tank">
+                <h2>Step 1: Anaerobic Digestion</h2>
+                <p>Food waste is mixed with water in a sealed container. Microorganisms break it down in the absence of oxygen, producing biogas.</p>
+            </div>
+            <div class="step">
+                <img src="https://zorg-biogas.com/uploads/1/5548-reactor_with_flexible_gas_holder.jpg" alt="Biogas Storage">
+                <h2>Step 2: Biogas Storage</h2>
+                <p>The biogas, mainly methane, is stored in a pressurized tank. This gas is ready to be used as a renewable energy source.</p>
+            </div>
+            <div class="step">
+                <img src="https://industrialoutlook.in/wp-content/uploads/2021/02/Screenshot-2021-02-23-at-12.12.34-PM.png" alt="Energy Generation">
+                <h2>Step 3: Energy Generation</h2>
+                <p>Biogas powers a generator to produce electricity or heat for common areas, reducing energy costs for the residents.</p>
+            </div>
+            <div class="step">
+                <img src="https://drawdown.org/sites/default/files/styles/twitter/public/solutions/solution_composting01.jpg?itok=1UT9jq9f" alt="Compost Production">
+                <h2>Step 4: Compost Production</h2>
+                <p>The leftover digestate is turned into compost, which can be used for gardening, farming, or beautifying the community.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Waste-to-Energy Composting System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

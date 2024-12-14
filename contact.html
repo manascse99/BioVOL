@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact - Waste-to-Energy Project">
+    <title>Contact - Waste-to-Energy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7fafc;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        header {
+            background-color: #333;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo h1 {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        nav .logo .orange {
+            color: #FF5722; /* Orange color */
+        }
+
+        nav .logo .green {
+            color: #4CAF50; /* Green color */
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            text-decoration: none;  /* Add this line */
+        }
+
+        nav ul li a:hover {
+            color: #4CAF50;
+        }
+
+        /* Contact Section */
+        section {
+            padding: 4rem 10%;
+            text-align: center;
+        }
+
+        section h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #4CAF50;
+            margin-bottom: 2rem;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .team-member h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 1rem;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .team-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none;">
+                    <h1><span class="orange">Bio</span><span class="green">Volt</span></h1>
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="solution.html">Solution</a></li>
+                <li><a href="works.html">How It Works</a></li>
+                <li><a href="benifits.html">Benefits</a></li>
+                <li><a href="prototype.html">Prototype</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section>
+        <h1>Meet the Team</h1>
+        <p>Our team is committed to creating an efficient and sustainable Waste-to-Energy system. Get to know the people behind the project.</p>
+
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-member">
+                <img src="manas.png" alt="Member 1">
+                <h2>Manas Srivastava</h2>
+                <p><strong>Branch:</strong> Computer Science and Inforamtion Technology</p>
+                <p><strong>College:</strong> KIET Group of Institutions</p>
+                <p><strong>E-Mail:</strong> manas.2428csit2032@kiet.edu</p>
+                <p><strong>Age:</strong> 17</p>
+                <p><strong>Address:</strong> Mirzapur, Uttar Pradesh, India</p>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="team-member">
+                <img src="milind.png" alt="Member 2">
+                <h2>Milind Pushp</h2>
+                <p><strong>Branch:</strong> Computer Science and Inforamtion Technology</p>
+                <p><strong>College:</strong> KIET Group of Institutions</p>
+                <p><strong>E-Mail:</strong> milind.2428csit1769@kiet.edu</p>
+                <p><strong>Age:</strong> 19</p>
+                <p><strong>Address:</strong>  Bihar, India</p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="team-member">
+                <img src="muskan.png" alt="Member 3">
+                <h2>Muskan Pahwa</h2>
+                <p><strong>Branch:</strong> Computer Science and Inforamtion Technology</p>
+                <p><strong>College:</strong> KIET Group of Institutions</p>
+                <p><strong>E-Mail:</strong> muskanpahwa000@gmail.com</p>
+                <p><strong>Age:</strong> 19</p>
+                <p><strong>Address:</strong> Varanasi, Uttar Pradesh, India</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Waste-to-Energy Composting System. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
